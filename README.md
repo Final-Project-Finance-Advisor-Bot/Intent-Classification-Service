@@ -2,6 +2,11 @@
 
 Intent Classification Service - a minimal FastAPI microservice that loads a trained intent classifier (TF-IDF baseline, later BERT) and returns the top intent plus confidence scores for a given text input.
 
+## Pre-requisite
+- Python
+- Curl
+- Git
+
 ## local setup (gcs model source)
 ### 0 Clone repository
 
@@ -46,6 +51,7 @@ uvicorn app.intentService:app --host 127.0.0.1 --port 8000 --reload
 ```
 
 ### 5 quick test
+Command below will show highest intent probability based on text provided:
 
 ```bash
 curl -X POST http://127.0.0.1:8000/classify \
