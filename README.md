@@ -3,6 +3,11 @@
 Intent Classification Service - a minimal FastAPI microservice that loads a trained intent classifier (TF-IDF baseline, later BERT) and returns the top intent plus confidence scores for a given text input.
 
 ## local setup (gcs model source)
+### 0 Clone repository
+
+```bash
+git clone <url-to-repo>
+```
 
 ### 1 create and activate a virtual environment
 
